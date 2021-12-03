@@ -274,7 +274,7 @@ fill: var(--third-text-color);
   justify-content: center;
   
 }
-.comics-item{
+.icon-box{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -286,6 +286,11 @@ fill: var(--third-text-color);
 .comics-item-icon:hover,
 .comics-item-icon:focus{
 fill: var(--second-button-color);
+}
+
+.comics:hover,
+.comics:focus {
+  border-color: var(--second-button-color);
 }
 
 .comics-list-item:hover,
@@ -325,7 +330,8 @@ fill: var(--second-button-color);
 .about-iteam-comand {
   display: flex;
   margin: 0;
-  
+  margin-left: -30px;
+
 }
 
 .about-iteam-comand > .about-comand {
@@ -389,36 +395,23 @@ fill: var(--second-button-color);
   justify-content: center;
   align-items: center;
   background-color:var(--main-title-color);
-  color: var(--first-button-color);
+  color: rgba(175, 177, 184, 1);
 }
 
 .master-social-icon{
   fill: currentColor;
 }
-/*.master-social-link:hover,
+.master-social-link:hover,
 .master-social-link:focus{
-  background-color: darkgoldenrod;
-  color: blueviolet;
-}*/
-
-
-
-.master-social-item :hover,
-.master-social-item :focus{
   background-color: var(--second-button-color);
-  }
-
-.master-social-icon :hover,
-.master-social-icon :focus {
-  fill:var(--second-button-color);
+  color:var(--main-title-color);
 }
 
-.master-social-item + .master-social-item{
+
+.master-social-item + .master-social-item {
   margin-left: 10px;
 }
-.master-social-icon {
-  fill: rgba(175, 177, 184, 1)
-}
+
 
 
 /*----------- Постоянные клиенты---------*/
@@ -498,6 +491,14 @@ fill: currentColor;
   letter-spacing: 0.03em;
   color: var(--six-text-color);
 }
+.adress-footer{
+  width: 231px;
+}
+.address-icons{
+  margin-top: 12px;
+  margin-left: 70px;
+  width: 206px;
+}
 
 .address-header-tel {
   font-size: 14px;
@@ -519,7 +520,9 @@ fill: currentColor;
   max-width: 231px;
 }*/
   
-
+.address-icons-insta{
+max-width: 206px ;
+}
 .join{
   display: flex;
   margin-bottom: 20px;
@@ -627,20 +630,21 @@ color: var(--first-text-color);
   display: flex;
   flex-wrap: wrap;
   
-  margin-left: -20px;
-  margin-top: -20px;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .card-set > .item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
-  border: 1px solid #eeeeee;
+  
 }
 .card-content {
   padding-left: 24px;
   padding-bottom: 20px;
   padding-top: 20px;
   background-color: var(--main-title-color);
+  border: 1px solid #eeeeee;
 }
 .item:hover {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
