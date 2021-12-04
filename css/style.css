@@ -186,6 +186,9 @@ fill: var(--third-text-color);
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
+  /*width: 1600px;*/
+  justify-content: center;
+  box-sizing:  border-box;
 }
 
 
@@ -270,8 +273,6 @@ fill: var(--third-text-color);
   height: 100%;
   border-radius: 4px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   
 }
 .icon-box{
@@ -281,23 +282,22 @@ fill: var(--third-text-color);
   width: 270px;
   height: 120px;
   background-color: #F5F4FA;
- 
+  color: yellowgreen;
 }
+
+.comics-item-icon{
+  fill: currentColor;
+}
+.icon-box :hover,
+.icon-box :focus {
+ border-color: red;
+}
+
+
 .comics-item-icon:hover,
-.comics-item-icon:focus{
-fill: var(--second-button-color);
-}
-
-.comics:hover,
-.comics:focus {
+.comics-item-icon:focus {
   border-color: var(--second-button-color);
 }
-
-.comics-list-item:hover,
-.comics-list-item:focus {
-  border-color: var(--second-button-color);
-}
-
 
 .comics-list-item + .comics-list-item{
   margin-left: 30px;
@@ -355,6 +355,7 @@ fill: var(--second-button-color);
   padding-bottom: 94px;
   padding-top: 94px;
   background-color: #f5f4fa;
+  box-sizing: border-box;
 }
 .about-our-comand-people {
   font-weight: 500;
@@ -495,9 +496,7 @@ fill: currentColor;
   width: 231px;
 }
 .address-icons{
-  margin-top: 12px;
   margin-left: 70px;
-  width: 206px;
 }
 
 .address-header-tel {
@@ -512,22 +511,22 @@ fill: currentColor;
 
 }
 /* -----FOOTER + DIV---- */
+
 .footer-conteiner{
   display: flex;
   align-items: baseline;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+
 }
-/*.address-icons{
-  max-width: 231px;
-}*/
-  
-.address-icons-insta{
-max-width: 206px ;
-}
+
+
 .join{
   display: flex;
   margin-bottom: 20px;
-  margin-left: 516px;
-  font-weight: bold;
+ font-weight: bold;
  font-size: 14px;
  line-height: 1.14;
 letter-spacing: 0.03em;
